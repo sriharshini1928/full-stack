@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .grid{
+            display: grid;
+            grid-template-columns:100px 100px 100px 100px ;
+            grid-template-rows:100px 100px 100px ;
+            padding:10px
+        }
+        .child{
+            padding: 10px;
+            background-color: blueviolet;
+        }
+        .header{
+            grid-column:1/4 ;
+            background-color:blanchedalmond;
+        }
+        .slidebar{
+            grid-row: 2/4;
+            background-color: blue;
+        }
+        .content{
+            grid-column: 2/4;
+            grid-row:2/4 ;
+            background-color: brown;
+        }
+        .footer{
+            grid-column:1/4 ;
+            background-color: chartreuse;
+            height: 70px;
+
+
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="grid">
+    <div class="header">header</div>
+    <div class="slidebar">sidebar</div>
+    <div class="content">content</div>
+    <div class="footer">footer</div>
+    </div>
+
+    
+    
+</body>
+</html>
