@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="text">java script</h1>
+    <button onclick="handlebuttonclicked()">click me!!</button>
+    <br><br>
+    <h1>sri</h1>
+    <input type="text" id="name" placeholder="enter your name">
+    <button onclick="addname()">addname</button>
+    <ol 
+    id="list">
+</ol>
+    
+    
+
+    
+    <script>
+
+    var a="10"
+    var b=10
+
+    console.log(a==b);
+    console.log(a===b);
+    console.log(a!=b);
+    console.log(a!==b);
+    var num=2;
+    var result =num%2===0? "even":"odd"
+    console.log(result)
+    var mark=34;
+    var result =(mark>=80)? "o":(mark>=60)? "A+":(mark>=35)? "p":"f"
+    console.log(result)
+
+    function sum(a,b){
+        console.log(a+b)
+
+    }
+    sum(10,20)
+    var sum = ()=>{
+        var a=10;
+        var b=20;
+        console.log(a+b)
+    } 
+    sum();
+
+
+       let arr= [10,20,30,40];
+       let arr2= [...arr,50,60,70]
+       console.log(arr)
+       console.log(arr2)
+
+       var marks =[90,95,96,99,100];
+       var [m1,m2,m3,m4,m5] = marks;
+       console.log(m1)
+       console.log(m2)
+       console.log(m3)
+       console.log(m4)
+       console.log(m5)
+
+       function handlebuttonclicked(){
+        console.log("BUTTON CLICKED");
+        const result = document.querySelector("#text")
+        result.innerHTML = result.innerHTML === "Hello KPRCAS"?"Hello world":"Hello KPRCAS"
+        
+       }
+       function addname(){
+        const name =document.getElementById("name").value;
+        const li = document.createElement("li");
+        li.innerTEXT = name;
+        document.getElementById("list").append(li);
+       }
+
+    </script>
+
+
+
+</body>
+</html>
